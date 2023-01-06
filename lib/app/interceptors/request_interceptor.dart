@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
 
-import '../../services/storage_service.dart';
+import '../../service/storage_service.dart';
 
 class RequestInterceptor extends Interceptor {
   RequestInterceptor();
