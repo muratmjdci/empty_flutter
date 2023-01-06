@@ -13,7 +13,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: const [],
+      providers: [
+        ChangeNotifierProvider(create: (_) => ChangeNotifier()),
+      ],
       child: MaterialApp.router(
         builder: (context, child) {
           return MediaQuery(
